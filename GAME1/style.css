@@ -1,0 +1,52 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: paleturquoise;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: darkcyan;
+}
+
+.cell .x {
+  color: #eb8787;
+}
+
+.cell .o {
+  color: #4d94ff;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.play-again {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4d4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background-color: #333;
+}
